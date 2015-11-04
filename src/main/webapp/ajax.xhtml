@@ -6,14 +6,18 @@
       xmlns:h="http://java.sun.com/jsf/html">
 	
     <h:head>
-        <title>Managed Beans demo</title>
+        <title>AJAX demo</title>
     </h:head>
     <h:body>
-    	<h2>Managed Beans demo - managedBean.xhtml</h2>
+    	<h2>AJAX demo - ajax.xhtml</h2>
     	<h:form>
-    	   <h:inputText value="#{demoManagedBean.name}"></h:inputText>
-    	   <h:commandButton value="Welcome" action="managedBean.xhtml"></h:commandButton>
+    	 	<p>
+				<h:inputText id="name" value="#{demoManagedBean.name}"></h:inputText>
+				<h:commandButton value="Welcome">
+					<f:ajax execute="name" render="output" />
+				</h:commandButton>
+			</p>
+    	   <h:outputText id="output" value="#{demoManagedBean.welcome}" />
     	</h:form>
-    	<h2>Welcome #{demoManagedBean.name}</h2>
     </h:body>
 </html>

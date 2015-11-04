@@ -10,7 +10,7 @@ import javax.faces.bean.SessionScoped;
 public class DemoManagedBean implements Serializable {
 	private static final long serialVersionUID = 8185771831360665660L;
 	
-	private String name;
+	private String name = "DEFAUT";
 
 	public String getName() {
 		return name;
@@ -18,6 +18,10 @@ public class DemoManagedBean implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public String getWelcome() {
+		return "Welcome to " + name + " (from AJAX)";
 	}
 	
 }
