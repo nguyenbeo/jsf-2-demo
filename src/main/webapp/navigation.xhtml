@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+	
+    <h:head>
+        <title>Navigation demo</title>
+    </h:head>
+    <h:body>
+    	<h2>Navigation demo - navigation.xhtml</h2>
+    	<h:form>
+    		<h3>Auto navigation in JSF page</h3>
+			<h:commandButton value="Navigate me" action="navigation2"></h:commandButton>
+			<hr/>
+			<h3>Auto navigation in Managed bean</h3>
+			<h:commandButton value="Navigate me" action="#{navigationManagedBean.navigateToNavigation2}"></h:commandButton>
+			<hr/>
+			<h3>Conditional navigation</h3>
+			<h:commandButton value="Navigate me to 1" action="#{navigationManagedBean.navigateToRightPage}">
+				<f:param name="page" value="1"/>
+			</h:commandButton>&nbsp;
+			<h:commandButton value="Navigate me to 2" action="#{navigationManagedBean.navigateToRightPage}">
+				<f:param name="page" value="2"/>
+			</h:commandButton>
+    	</h:form>
+    </h:body>
+</html>
