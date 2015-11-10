@@ -1,6 +1,7 @@
 # jsf-2-demo
 Some demos of JSF 2
 * Managed bean
+* Navigation
 * Ajax
 
 # Technologies
@@ -10,8 +11,11 @@ Some demos of JSF 2
 
 # How to run
 Run:
+
 mvn install
+
 mvn jetty:run
 
 Go to:
+
 http://localhost:9999/jsf-2-demo/index.xhtml
