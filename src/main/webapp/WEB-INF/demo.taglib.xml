@@ -1,0 +1,7 @@
+<facelet-taglib>
+   <namespace>http://kthsoft.com/facelets</namespace>
+   <tag>
+      <tag-name>button</tag-name>
+      <source>tags/com/kthsoft/buttonPanel.xhtml</source>
+   </tag>
+</facelet-taglib>

@@ -2,6 +2,7 @@
 Some demos of JSF 2
 * Managed bean
 * Navigation
+* Facelets
 * Ajax
 
 # Technologies
